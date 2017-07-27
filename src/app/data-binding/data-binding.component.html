@@ -1,0 +1,40 @@
+<section class="property-bindign">
+  <article>
+    <h3>Interpolação</h3>
+    <p>String de Interpolação: {{ url }}</p>
+    <p> 1 + 1 é igual a {{ 1 + 1 }}</p>
+    <p> 1 + 1 não é igual a {{ 1 + 1 + getValor() }}</p>
+  </article>
+  <article>
+    <img src="{{ urlImagem }}"/>
+    <img [src]="urlImagem"/>
+    <img bind-src="urlImagem"/>
+  </article>
+
+  <article>
+    <select #classe (change)="0">
+      <option value="alert-success">sucesso</option>
+      <option value="alert-info">info</option>
+      <option value="alert-warning">alerta</option>
+      <option value="alert-danger">perigo</option>
+    </select>
+
+    <div class="alert {{ classe.value }}">
+      Texto colorido
+    </div>
+
+    <div class="alert" role="alert"
+      [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+    <div class="alert" role="alert"
+        [class.alert-info]="classe.value == 'alert-info'">Info</div>
+    <div class="alert" role="alert"
+        [class.alert-warning]="classe.value == 'alert-warning'">Alerta</div>
+    <div class="alert" role="alert"
+        [class.alert-danger]="classe.value == 'alert-danger'">Perigo</div>
+
+    <div class="alert" role="alert"
+        [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+      Aparece se ocorrer erro
+    </div>
+  </article>
+</section>
