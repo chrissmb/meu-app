@@ -37,4 +37,14 @@
       Aparece se ocorrer erro
     </div>
   </article>
+
+  <article>
+    <input type="submit" (click)="alertaClick()"/><br>
+    <input type="text" (keyup.enter)="enterCampo(campo.value)" 
+        (keyup)="alteraCampo($event)" #campo/>
+    {{ palavra }}<br>
+    <span (mouseover)="mouseSobreFora()"
+      (mouseout)="mouseSobreFora()"
+      [class.highlight]="mouseSobre">Passe o mouse sobre</span>
+  </article>
 </section>
