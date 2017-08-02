@@ -24,10 +24,11 @@ export class DataBindingComponent implements OnInit {
     this.palavra = digitado;
   }
 
-  alteraCampo(evento) {
+  alteraCampo(evento: KeyboardEvent) {
+
     console.log(
       "Key = " + evento.key
-      + " valor do campo = " + evento.target.value
+      + " valor do campo = " + (<HTMLInputElement>event.target).value
     );
   }
 

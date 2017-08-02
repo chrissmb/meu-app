@@ -47,4 +47,9 @@
       (mouseout)="mouseSobreFora()"
       [class.highlight]="mouseSobre">Passe o mouse sobre</span>
   </article>
+
+  <article>
+    <input type="text" #caixaTexto (keyup)="0"/>
+    {{ caixaTexto.value }}
+  </article>
 </section>
