@@ -9,7 +9,7 @@ export class DataBindingComponent implements OnInit {
 
   url: string = "http://www.pudim.com.br/";
   urlImagem: string = 'https://mancilha.files.wordpress.com/2008/09/teste2.png';
-  palavra: string;
+  palavra: string = "teste";
   mouseSobre: boolean = false;
 
   getValor() {

@@ -52,4 +52,9 @@
     <input type="text" #caixaTexto (keyup)="0"/>
     {{ caixaTexto.value }}
   </article>
+
+  <article>
+    <h3> Two way data binding</h3>
+    <input type="text" [(ngModel)]="palavra"/>
+  </article>
 </section>
