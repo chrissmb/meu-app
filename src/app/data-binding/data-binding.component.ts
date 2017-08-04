@@ -36,6 +36,10 @@ export class DataBindingComponent implements OnInit {
     this.mouseSobre = !this.mouseSobre;
   }
 
+  onMudouValor(evento) {
+    console.log(evento);
+  }
+  
   constructor() { }
 
   ngOnInit() {
