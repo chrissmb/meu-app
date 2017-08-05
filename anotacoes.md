@@ -86,7 +86,7 @@ Scaffold  | Usage
 
 ## Data Binding
 
-Interporção: `{{ variavel }}`
+Interpolação: `{{ variavel }}`
 ```
 <img src="{{variavel}}">
 <img [src]="variavel">
@@ -108,9 +108,9 @@ ou em style.css incluir
 
     @import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
-> Outros complementos para instalar no Angular:
-> Lodash
-> Materialize
+> Outros complementos para instalar no Angular:  
+> Lodash  
+> Materialize  
 
 ## Testes
 
