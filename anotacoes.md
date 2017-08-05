@@ -9,6 +9,7 @@
     - [Data Binding](#data-binding)
     - [Abstrair Bootstrap](#abstrair-bootstrap)
     - [Testes](#testes)
+    - [Gerar Build](#gerar-build)
 
 ## Ambiente
 Instalar node.js
@@ -91,9 +92,25 @@ Interporção: `{{ variavel }}`
 <img [src]="variavel">
 <img bind-src="variavel">
 ```
-##Abstrair Bootstrap
+## Abstrair Bootstrap
 
-    npm install ng2-bootstrap bootstrap --save
+    npm install ngx-bootstrap bootstrap --save
+
+Abrir o arquvo angular-cli.sjon e incluir `"../node_modules/bootstrap/dist/css/bootstrap.min.css",` ficando assim:
+
+```
+ "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
+      ],
+```
+ou em style.css incluir 
+
+    @import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+> Outros complementos para instalar no Angular:
+> Lodash
+> Materialize
 
 ## Testes
 
@@ -102,8 +119,29 @@ Verifica se código segue normas do style guide:
     ng lint
 
 Testa o código conforme os arquivos .spec.ts:
+
     ng test
 
 Teste end-to-end:
     ng e2e
+
+## Gerar Build
+
+Build em modo develop
+
+    ng build --dev
+    ng build
+
+Build em modo produção
+
+    ng build --prod
+
+> Servidor http nodejs:   
+> `npm install http-server -g`
+>
+> executar:  
+> ```
+> cd dist
+> http-server
+> ```
 
