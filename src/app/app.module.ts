@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './data-binding/input-property/input-property.component';
 import { OutputPropertyComponent } from './data-binding/output-property/output-property.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
     DataBindingComponent,
     InputPropertyComponent,
     OutputPropertyComponent,
-    DiretivaNgifComponent
+    DiretivaNgifComponent,
+    DiretivaNgswitchComponent
   ],
   imports: [
     BrowserModule,
