@@ -10,8 +10,8 @@ export class CursoDetalheComponent implements OnInit {
   cursos: string[];
 
   constructor() {
-    this.nomePortal = "http://www;pudim.com.br";
-    this.cursos = ["Java", "C++", "Haskell"];
+    this.nomePortal = 'http://www.pudim.com.br';
+    this.cursos = ['Java', 'C++', 'Haskell'];
   }
 
   ngOnInit() {

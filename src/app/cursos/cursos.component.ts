@@ -10,8 +10,8 @@ export class CursosComponent implements OnInit {
   nomePortal: string;
   cursos: string[];
 
-  constructor(private cursosService: CursosService) { 
-    this.nomePortal = "www.pudim.com.br";
+  constructor(private cursosService: CursosService) {
+    this.nomePortal = 'www.pudim.com.br';
     this.cursos = this.cursosService.getCursos();
   }
 

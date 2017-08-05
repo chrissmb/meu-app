@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  url: string = "http://www.pudim.com.br/";
-  urlImagem: string = 'https://mancilha.files.wordpress.com/2008/09/teste2.png';
-  palavra: string = "teste";
-  mouseSobre: boolean = false;
+  url = 'http://www.pudim.com.br/';
+  urlImagem = 'https://mancilha.files.wordpress.com/2008/09/teste2.png';
+  palavra = 'teste';
+  mouseSobre = false;
 
   getValor() {
     return 1;
   }
 
   alertaClick() {
-    alert("clicou no botão");
+    alert('clicou no botão');
   }
 
   enterCampo(digitado) {
@@ -27,8 +27,8 @@ export class DataBindingComponent implements OnInit {
   alteraCampo(evento: KeyboardEvent) {
 
     console.log(
-      "Key = " + evento.key
-      + " valor do campo = " + (<HTMLInputElement>event.target).value
+      'Key = ' + evento.key
+      + ' valor do campo = ' + (<HTMLInputElement>event.target).value
     );
   }
 
@@ -39,7 +39,7 @@ export class DataBindingComponent implements OnInit {
   onMudouValor(evento) {
     console.log(evento);
   }
-  
+
   constructor() { }
 
   ngOnInit() {

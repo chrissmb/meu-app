@@ -40,7 +40,7 @@
 
   <article>
     <input type="submit" (click)="alertaClick()"/><br>
-    <input type="text" (keyup.enter)="enterCampo(campo.value)" 
+    <input type="text" (keyup.enter)="enterCampo(campo.value)"
         (keyup)="alteraCampo($event)" #campo/>
     {{ palavra }}<br>
     <span (mouseover)="mouseSobreFora()"
@@ -57,12 +57,12 @@
     <h3> Two way data binding</h3>
     <input type="text" [(ngModel)]="palavra"/>
   </article>
-  
+
   <article>
-    <meuElemento nome="John"></meuElemento>
+    <app-meu-elemento nome="John"></app-meu-elemento>
   </article>
-  
+
   <article>
-    <contador numero="13" (mudouValor)="onMudouValor($event)"></contador>
+    <app-contador numero="13" (mudouValor)="onMudouValor($event)"></app-contador>
   </article>
 </section>
