@@ -9,6 +9,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './data-binding/input-property/input-property.component';
 import { OutputPropertyComponent } from './data-binding/output-property/output-property.component';
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OutputPropertyComponent } from './data-binding/output-property/output-p
     MeuPrimeiro2Component,
     DataBindingComponent,
     InputPropertyComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    DiretivaNgifComponent
   ],
   imports: [
     BrowserModule,
