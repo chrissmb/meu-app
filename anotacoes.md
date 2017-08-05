@@ -1,6 +1,14 @@
 # Angular
 
-[toc]
+- [Angular](#angular)
+    - [Ambiente](#ambiente)
+    - [Editores de texto](#editores-de-texto)
+    - [Criar projeto](#criar-projeto)
+    - [Rodar projeto](#rodar-projeto)
+    - [Gerando arquivos](#gerando-arquivos)
+    - [Data Binding](#data-binding)
+    - [Abstrair Bootstrap](#abstrair-bootstrap)
+    - [Testes](#testes)
 
 ## Ambiente
 Instalar node.js
@@ -46,9 +54,10 @@ Rodar e abrir a aplicação:
 > `0.0.0.0  endereco_c9`
 
 
-## Gerando componentes e serviços
+## Gerando arquivos
 Gerar componente:
 
+    ng generate component nome-componente
     ng g c nome-componente
     ng g c caminho/nome-componente
 
@@ -60,7 +69,41 @@ Gerar serviço
 
     ng g s nome-componente/nome-servico
 
+Tabela de comandos:
+
+Scaffold  | Usage
+---       | ---
+[Component](https://github.com/angular/angular-cli/wiki/generate-component) | `ng g component my-new-component`
+[Directive](https://github.com/angular/angular-cli/wiki/generate-directive) | `ng g directive my-new-directive`
+[Pipe](https://github.com/angular/angular-cli/wiki/generate-pipe)           | `ng g pipe my-new-pipe`
+[Service](https://github.com/angular/angular-cli/wiki/generate-service)     | `ng g service my-new-service`
+[Class](https://github.com/angular/angular-cli/wiki/generate-class)         | `ng g class my-new-class`
+[Guard](https://github.com/angular/angular-cli/wiki/generate-guard)         | `ng g guard my-new-guard`
+[Interface](https://github.com/angular/angular-cli/wiki/generate-interface) | `ng g interface my-new-interface`
+[Enum](https://github.com/angular/angular-cli/wiki/generate-enum)           | `ng g enum my-new-enum`
+[Module](https://github.com/angular/angular-cli/wiki/generate-module)       | `ng g module my-module`
+
 ## Data Binding
 
-Interporção: {{ variavel }}
+Interporção: `{{ variavel }}`
+```
+<img src="{{variavel}}">
+<img [src]="variavel">
+<img bind-src="variavel">
+```
+##Abstrair Bootstrap
+
+    npm install ng2-bootstrap bootstrap --save
+
+## Testes
+
+Verifica se código segue normas do style guide:
+
+    ng lint
+
+Testa o código conforme os arquivos .spec.ts:
+    ng test
+
+Teste end-to-end:
+    ng e2e
 
