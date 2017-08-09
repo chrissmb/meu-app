@@ -14,7 +14,7 @@
 </ul>
 
 <div class="container" [ngSwitch]="aba">
-  <p *ngSwitchCase="profile">Página Profile</p>
-  <p *ngSwitchCase="messages">Página Messages</p>
-  <p *ngSwitchDeffault>Página Home</p>
+  <p *ngSwitchCase="'profile'">Página Profile</p>
+  <p *ngSwitchCase="'messages'">Página Messages</p>
+  <div *ngSwitchDefault>Página Home</div>
 </div>
