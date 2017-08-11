@@ -11,6 +11,7 @@ import { InputPropertyComponent } from './data-binding/input-property/input-prop
 import { OutputPropertyComponent } from './data-binding/output-property/output-property.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
+import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch
     InputPropertyComponent,
     OutputPropertyComponent,
     DiretivaNgifComponent,
-    DiretivaNgswitchComponent
+    DiretivaNgswitchComponent,
+    DiretivaNgforComponent
   ],
   imports: [
     BrowserModule,
