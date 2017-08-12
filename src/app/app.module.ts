@@ -11,12 +11,10 @@ import { InputPropertyComponent } from './data-binding/input-property/input-prop
 import { OutputPropertyComponent } from './data-binding/output-property/output-property.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
-<<<<<<< HEAD
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
-=======
 import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
->>>>>>> 229bad6fe1b33bf1d130502c2e863035a7424f56
+
 
 @NgModule({
   declarations: [
@@ -28,12 +26,9 @@ import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.co
     OutputPropertyComponent,
     DiretivaNgifComponent,
     DiretivaNgswitchComponent,
-<<<<<<< HEAD
-    DiretivaNgforComponent
-=======
+    DiretivaNgforComponent,
     DiretivaNgclassComponent,
     DiretivaNgstyleComponent
->>>>>>> 229bad6fe1b33bf1d130502c2e863035a7424f56
   ],
   imports: [
     BrowserModule,
