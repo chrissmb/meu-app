@@ -10,7 +10,7 @@ export class ElvisOperatorComponent implements OnInit {
   pessoa: any = {
     nome: 'Joao',
     cargo: null,
-  }
+  };
 
   constructor() { }
 

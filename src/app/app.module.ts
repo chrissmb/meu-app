@@ -16,6 +16,8 @@ import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.co
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.component';
 import { ExNgcontentComponent } from './ex-ngcontent/ex-ngcontent.component';
+import { FundoAzulDirective } from './shared/fundo-azul.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { ExNgcontentComponent } from './ex-ngcontent/ex-ngcontent.component';
     DiretivaNgclassComponent,
     DiretivaNgstyleComponent,
     ElvisOperatorComponent,
-    ExNgcontentComponent
+    ExNgcontentComponent,
+    FundoAzulDirective,
+    DiretivasCustomizadasComponent
   ],
   imports: [
     BrowserModule,
