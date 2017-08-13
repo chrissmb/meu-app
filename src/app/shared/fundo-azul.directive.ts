@@ -10,7 +10,7 @@ export class FundoAzulDirective {
     private _renderer: Renderer
   ) {
     // console.log(this._elementRef);
-    //this._elementRef.nativeElement.style.backgroundColor = 'blue';
+    // this._elementRef.nativeElement.style.backgroundColor = 'blue';
     this._renderer.setElementStyle(
       this._elementRef.nativeElement,
       'background-color',

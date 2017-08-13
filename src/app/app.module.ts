@@ -18,6 +18,7 @@ import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.componen
 import { ExNgcontentComponent } from './ex-ngcontent/ex-ngcontent.component';
 import { FundoAzulDirective } from './shared/fundo-azul.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretiv
     ElvisOperatorComponent,
     ExNgcontentComponent,
     FundoAzulDirective,
-    DiretivasCustomizadasComponent
+    DiretivasCustomizadasComponent,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
