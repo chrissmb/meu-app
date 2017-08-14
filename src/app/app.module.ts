@@ -19,6 +19,7 @@ import { ExNgcontentComponent } from './ex-ngcontent/ex-ngcontent.component';
 import { FundoAzulDirective } from './shared/fundo-azul.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
+import { HighlightDirective } from './shared/highlight.directive';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
     ExNgcontentComponent,
     FundoAzulDirective,
     DiretivasCustomizadasComponent,
-    HighlightMouseDirective
+    HighlightMouseDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
