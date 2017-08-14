@@ -9,3 +9,7 @@
 <p appHighlight="brown" defaultColor="grey">
   Teste do highlight.
 </p>
+
+<p *ngIf="verdade">Verdadeiro</p>
+<p *ngElse="verdade">Falso</p>
+<button (click)="verdade = !verdade">mudar</button>
