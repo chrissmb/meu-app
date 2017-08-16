@@ -10,6 +10,8 @@
     - [Abstrair Bootstrap](#abstrair-bootstrap)
     - [Testes](#testes)
     - [Gerar Build](#gerar-build)
+    - [Lifecycle Hooks](#lifecycle-hooks)
+    - [Abstrair Materialize](#abstrair-materialize)
 
 ## Ambiente
 Instalar node.js
@@ -171,3 +173,37 @@ component's views and child views.
 
 **ngOnDestroy** − This is the cleanup phase just before Angular destroys the
 directive/component.
+
+## Abstrair Materialize
+
+Executar:
+
+```
+npm install materialize-css --save
+npm install angular2-materialize --save
+npm install jquery@^2.2.4 --save
+npm install hammerjs --save
+```
+
+Editar angular-cli.json e inserir no vetor styles:
+```
+"../node_modules/materialize-css/dist/css/materialize.css"
+```
+no vetor scripts:
+```
+"../node_modules/jquery/dist/jquery.js",
+"../node_modules/hammerjs/hammer.js",
+"../node_modules/materialize-css/dist/js/materialize.js"
+```
+
+Adicionar no topo de app.module.ts:
+```
+import { MaterializeModule } from 'angular2-materialize';
+```
+
+Adicionar MaterializeModule dentro do vetor imports em @NgModule decorator em app.module.ts.  
+
+Adicionar esta linha no header de index.html:
+```
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
