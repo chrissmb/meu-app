@@ -202,7 +202,7 @@ Adicionar no topo de app.module.ts:
 import { MaterializeModule } from 'angular2-materialize';
 ```
 
-Adicionar MaterializeModule dentro do vetor imports em @NgModule decorator em app.module.ts.  
+Adicionar MaterializeModule dentro do vetor **imports** em **@NgModule** decorator em app.module.ts.  
 
 Adicionar esta linha no header de index.html:
 ```
